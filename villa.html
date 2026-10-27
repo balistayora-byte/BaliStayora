@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Villa Details | BaliStayora</title>
+<meta name="description" content="Explore villa details, rental prices, facilities and availability across Bali with BaliStayora.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2a211c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#29231f;--muted:#756b63;--bg:#fff;--soft:#f7f3ee;--line:#e8e0d8;--brown:#79563c;--gold:#c6a477;--shadow:0 10px 32px rgba(40,28,20,.08}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:15px/1.65 "Plus Jakarta Sans",sans-serif;background:var(--bg)}a{color:inherit}button,input,select,textarea{font:inherit}
+.wrap{width:min(1200px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;background:#fffefcf2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:700 1.6rem "Playfair Display",serif;text-decoration:none}.brand small{display:block;font:600 .62rem "Plus Jakarta Sans";letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}.head nav{display:flex;gap:24px;align-items:center}.head nav a{text-decoration:none}.btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 20px;border-radius:10px;border:1px solid var(--brown);background:var(--brown);color:white;text-decoration:none;font-weight:700;cursor:pointer;min-height:46px}.btn.light{background:white;color:var(--brown)}.crumb{padding:20px 0;color:var(--muted);font-size:.88rem}.crumb a{color:var(--brown);text-decoration:none}
+.gallery{display:grid;grid-template-columns:1.55fr 1fr 1fr;grid-template-rows:190px 190px;gap:10px;border-radius:18px;overflow:hidden}.photo{position:relative;background:linear-gradient(135deg,#e3e7d9,#b6c8b4 45%,#6b8c78);overflow:hidden;cursor:pointer}.photo:first-child{grid-row:span 2}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}.photo:hover img{transform:scale(1.035)}.placeholder{height:100%;display:grid;place-items:center;color:#fff;text-shadow:0 1px 8px #344b37;font-size:1rem;background:linear-gradient(140deg,#8ba18a,#d7d5bd 48%,#527a68)}.gallery-count{position:absolute;right:14px;bottom:14px;background:white;border-radius:8px;padding:7px 12px;font-size:.8rem;font-weight:700}
+.layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,.85fr);gap:34px;align-items:start;margin:26px 0 60px}.title-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.kicker{color:var(--brown);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em}.title-row h1{font:700 clamp(2rem,4vw,2.8rem)/1.15 "Playfair Display",serif;margin:5px 0 8px}.location{color:var(--muted);margin:0}.pricebox{white-space:nowrap;text-align:right}.pricebox strong{display:block;font-size:1.35rem}.pricebox small{color:var(--muted)}.promo{display:inline-block;background:#f4e6d4;color:#74451d;padding:3px 9px;border-radius:99px;font-size:.75rem;font-weight:700;margin-top:4px}.section{padding:24px 0;border-bottom:1px solid var(--line)}.section h2{font:700 1.35rem "Playfair Display",serif;margin:0 0 14px}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.fact{background:var(--soft);padding:14px;border-radius:12px}.fact strong{display:block;font-size:1.05rem}.fact span{font-size:.78rem;color:var(--muted)}.facilities{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.facility{color:var(--muted);font-size:.9rem}.facility:before{content:"✓";color:var(--brown);font-weight:700;margin-right:8px}
+.side{position:sticky;top:96px;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}.side h2{font:700 1.35rem "Playfair Display",serif;margin:0 0 5px}.side>p{color:var(--muted);font-size:.88rem;margin:0 0 18px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field.full{grid-column:1/-1}.field label{display:block;font-size:.8rem;font-weight:700;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;border:1px solid #dcd3ca;border-radius:9px;padding:11px;background:white;min-width:0}.field textarea{min-height:100px;resize:vertical}.side .btn{width:100%;margin-top:14px}.fine{font-size:.75rem;color:var(--muted);margin-top:12px}.mapbox{height:250px;border-radius:14px;background:var(--soft);display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted)}.related{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.related a{border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none}.related .thumb{height:130px;background:linear-gradient(135deg,#c8d3bd,#73907b)}.related .txt{padding:12px}.related b{display:block}.related small{color:var(--muted)}footer{background:#29211c;color:#e6dcd2;padding:36px 0}footer a{color:#e6dcd2}.status{font-size:.9rem;font-weight:700;margin-top:12px}.hidden{display:none!important}
+@media(max-width:800px){.gallery{grid-template-columns:1.2fr 1fr;grid-template-rows:180px 150px}.photo:first-child{grid-row:span 2}.photo:nth-child(4),.photo:nth-child(5){display:none}.layout{grid-template-columns:1fr;gap:20px}.side{position:static;grid-row:1}.head nav a:not(.btn){display:none}.facts{grid-template-columns:repeat(2,1fr)}.facilities{grid-template-columns:repeat(2,1fr)}.related{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.wrap{width:min(100% - 28px,1200px)}.head{height:66px}.gallery{gap:6px;grid-template-rows:150px 110px}.title-row{display:block}.pricebox{text-align:left;margin-top:14px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.related{grid-template-columns:1fr 1fr}.related .thumb{height:100px}}
+</style>
+</head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">BaliStayora<small>Villa rentals · Bali</small></a><nav><a href="index.html#villas">Browse villas</a><a href="index.html#areas">Areas</a><a href="index.html#how">How it works</a><a class="btn" href="#inquiry">Request this villa</a></nav></div></header>
+<main class="wrap">
+<div class="crumb"><a href="index.html">Home</a>　›　<a href="index.html#villas">Villas</a>　›　<span id="crumb-name">Villa details</span></div>
+<div class="gallery" id="gallery" aria-label="Villa photo gallery"></div>
+<div class="layout">
+<article>
+<div class="title-row"><div><span class="kicker" id="type-label">Villa rental in Bali</span><h1 id="name">Villa details</h1><p class="location" id="location">Bali, Indonesia</p></div><div class="pricebox" id="pricebox"></div></div>
+<section class="section"><h2>Property details</h2><div class="facts" id="facts"></div></section>
+<section class="section"><h2>Description</h2><p id="description">Contact us to confirm the latest property details.</p><p id="included" class="fine"></p></section>
+<section class="section"><h2>Features &amp; facilities</h2><div class="facilities" id="facilities"></div></section>
+<section class="section"><h2>Location</h2><div class="mapbox"><div><strong id="map-area">Bali, Indonesia</strong><p>Exact location and viewing arrangements can be confirmed with our team.</p><a id="map-link" class="btn light" target="_blank" rel="noopener">Open area in Google Maps</a></div></div></section>
+<section class="section"><h2>Properties you may also like</h2><div class="related" id="related"></div></section>
+</article>
+<aside class="side" id="inquiry"><h2>Interested? Contact us</h2><p>Send a request to check availability and rental terms for this villa.</p>
+<form id="inquiry-form"><div class="formgrid">
+<div class="field"><label for="first">First name *</label><input id="first" required autocomplete="given-name"></div>
+<div class="field"><label for="last">Last name</label><input id="last" autocomplete="family-name"></div>
+<div class="field full"><label for="email">Email *</label><input id="email" type="email" required autocomplete="email"></div>
+<div class="field"><label for="movein">Move-in date *</label><input id="movein" type="date" required></div>
+<div class="field"><label for="term">Length of stay *</label><select id="term" required><option value="1 month">1 month</option><option value="3 months">3 months</option><option value="6 months">6 months</option><option value="12 months" selected>12 months</option><option value="2 years or more">2 years or more</option></select></div>
+<div class="field full"><label for="message">Message</label><textarea id="message" placeholder="Budget, number of occupants, pets, preferred facilities…"></textarea></div>
+</div><button class="btn" type="submit">Send inquiry by email</button><div class="status" id="status" role="status"></div><p class="fine">No payment is taken when you send an inquiry. Availability, rent, deposit and inclusions are confirmed before any agreement.</p></form>
+</aside>
+</div>
+</main>
+<footer><div class="wrap"><strong>BaliStayora</strong><p>Discover &amp; book villas across Bali.</p><a href="index.html">Back to homepage</a> · <a href="mailto:hello@balistayora.com">Contact us</a></div></footer>
+<script>
+(function(){
+const params=new URLSearchParams(location.search),id=params.get("id")||"v1";
+const samples=[
+{id:"v1",name:"Villa Sawah Senja",area:"Ubud",type:"Private pool",bed:2,bath:2,guests:4,size:150,monthly:28000000,yearly:300000000,near:"Rice field view",desc:"A quiet two-bedroom retreat near Ubud's rice terraces, with a private pool, a comfortable living space and a kitchen for longer stays.",fac:["Private pool","Rice field view","Weekly cleaning","Kitchen","Wi-Fi"],inc:"Included services and utilities are confirmed with the owner before signing.",photos:[]},
+{id:"v2",name:"Villa Karang Biru",area:"Uluwatu",type:"Luxury",bed:4,bath:5,guests:8,size:420,monthly:95000000,yearly:1000000000,desc:"A spacious luxury villa in Uluwatu, designed for groups seeking generous indoor-outdoor living and premium facilities.",fac:["Ocean view","Infinity pool","Private chef","Cinema room","Wi-Fi"],photos:[]},
+{id:"v3",name:"Villa Laut Tenang",area:"Seminyak & Umalas",type:"Family",bed:3,bath:3,guests:7,size:260,monthly:55000000,yearly:590000000,desc:"A family-friendly villa with garden space and easy access to dining, shopping and the coast.",fac:["Kids pool","Garden","Kitchen","Staff","Wi-Fi"],photos:[]},
+{id:"v4",name:"Villa Ombak Kecil",area:"Canggu & Berawa",type:"Private pool",bed:1,bath:1,guests:2,size:65,monthly:18000000,yearly:0,desc:"A compact private villa for a couple or solo resident, with a pool and space to work remotely.",fac:["Private pool","Workspace","Near beach","Wi-Fi"],photos:[]},
+{id:"v5",name:"Villa Taman Jati",area:"Ubud",type:"Long stay",bed:2,bath:2,guests:3,size:90,monthly:14000000,yearly:150000000,desc:"A practical long-stay villa with a kitchen, laundry and fast Wi-Fi for a comfortable extended stay.",fac:["Monthly rates","Fast Wi-Fi","Kitchen","Laundry"],photos:[]},
+{id:"v6",name:"Villa Surya Agung",area:"Canggu & Berawa",type:"Luxury",bed:5,bath:6,guests:10,size:600,monthly:120000000,yearly:0,desc:"A large luxury villa for families or groups, with generous space and premium facilities.",fac:["Private pool","Gym","Chef","Beach club access","Wi-Fi"],photos:[]}
+];
+let villas=samples;
+const $=id=>document.getElementById(id), esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money=n=>"IDR "+Number(n||0).toLocaleString("id-ID");
+function normalise(x){return {id:x.id,name:x.name||x.n||"Villa in Bali",area:x.area||x.a||"Bali",type:x.type||x.t||"Villa",bed:+(x.bed||x.b)||1,bath:+(x.bath||x.ba)||1,guests:+(x.guests||x.g)||2,size:+(x.size||x.m)||0,monthly:+(x.monthly||x.mo)||0,yearly:+(x.yearly||x.yr)||0,desc:x.desc||x.d||"Contact us for more information about this villa.",fac:x.fac||x.f||[],inc:x.inc||"",photos:x.photos||[],promoActive:!!x.promoActive,promoPercent:+x.promoPercent||0,promoLabel:x.promoLabel||"Special offer",promoStart:x.promoStart||"",promoEnd:x.promoEnd||""}}
+function activePromo(v,term){if(!v.promoActive||v.promoPercent<=0)return null;let today=new Date().toISOString().slice(0,10);if(v.promoStart&&today<v.promoStart)return null;if(v.promoEnd&&today>v.promoEnd)return null;let original=term==="y"?v.yearly:v.monthly;if(!original)return null;return {original,discounted:Math.round(original*(1-v.promoPercent/100)),percent:v.promoPercent,label:v.promoLabel}}
+function photoHTML(src,alt){return src?'<img loading="lazy" src="'+esc(src)+'" alt="'+esc(alt)+'">':'<div class="placeholder">Bali villa photography</div>'}
+function render(v){
+document.title=v.name+" | BaliStayora";
+$("name").textContent=v.name;$("crumb-name").textContent=v.name;$("location").textContent="⌖ "+v.area+", Bali";$("type-label").textContent=v.type+" · Monthly & yearly rental";
+const pm=activePromo(v,"m"),py=activePromo(v,"y");
+$("pricebox").innerHTML='<strong>'+(pm?'<s style="font-size:.8em;color:var(--muted)">'+money(pm.original)+'</s> '+money(pm.discounted):money(v.monthly))+'</strong><small>per month</small>'+(pm?'<br><span class="promo">-'+pm.percent+'% '+esc(pm.label)+'</span>':'')+(v.yearly?'<div style="margin-top:8px"><strong style="font-size:1rem">'+(py?'<s style="color:var(--muted)">'+money(py.original)+'</s> '+money(py.discounted):money(v.yearly))+'</strong><small> / year</small></div>':'');
+$("facts").innerHTML=[["Bedrooms",v.bed],["Bathrooms",v.bath],["Guests",v.guests],["Property size",v.size?v.size+" m²":"Ask us"]].map(x=>'<div class="fact"><strong>'+esc(x[1])+'</strong><span>'+x[0]+'</span></div>').join("");
+$("description").textContent=v.desc;$("included").textContent=v.inc?"Rent inclusions: "+v.inc:"Rent inclusions, utilities, deposit and cleaning arrangements are confirmed in writing.";
+$("facilities").innerHTML=(v.fac.length?v.fac:["Contact us for facilities"]).map(x=>'<div class="facility">'+esc(x)+'</div>').join("");
+$("map-area").textContent=v.area+", Bali";$("map-link").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(v.area+" Bali");
+let pics=(v.photos||[]).filter(Boolean).slice(0,5);while(pics.length<5)pics.push("");
+$("gallery").innerHTML=pics.map((p,i)=>'<div class="photo" data-photo="'+i+'">'+photoHTML(p,v.name+" photo "+(i+1))+(i===4?'<span class="gallery-count">View all photos</span>':'')+'</div>').join("");
+$("gallery").onclick=function(e){let tile=e.target.closest(".photo");if(tile&&v.photos&&v.photos.length){let src=v.photos[+tile.dataset.photo];if(src)window.open(src,"_blank","noopener")}};
+$("message").value="Hello BaliStayora, I am interested in "+v.name+" in "+v.area+". Please confirm availability and rental terms.";
+$("related").innerHTML=villas.filter(x=>x.id!==v.id).slice(0,3).map(x=>'<a href="villa.html?id='+encodeURIComponent(x.id)+'"><div class="thumb">'+(x.photos&&x.photos[0]?'<img style="width:100%;height:100%;object-fit:cover" src="'+esc(x.photos[0])+'" alt="'+esc(x.name)+'">':'')+'</div><div class="txt"><b>'+esc(x.name)+'</b><small>'+esc(x.area)+'</small><b style="margin-top:5px">'+money(x.monthly)+' / month</b></div></a>').join("");
+}
+async function load(){try{const r=await fetch("villas.json",{cache:"no-cache"});if(r.ok){const data=await r.json();const list=Array.isArray(data)?data:(data.listings||[]);if(list.length)villas=list.map(normalise)}}catch(e){}let v=villas.find(x=>x.id===id);if(!v){v=normalise({id,name:"Villa details",area:"Bali",monthly:0,desc:"This villa could not be found in the current listing data. Please browse available villas or contact our team."})}else v=normalise(v);render(v)}
+$("inquiry-form").addEventListener("submit",function(e){e.preventDefault();const v=villas.find(x=>x.id===id)||{name:$("name").textContent,area:$("location").textContent};const first=$("first").value.trim(),last=$("last").value.trim(),email=$("email").value.trim(),move=$("movein").value,term=$("term").value,message=$("message").value.trim();const subject="Villa inquiry: "+v.name;const body=["Villa: "+v.name,"Area: "+(v.area||""),"Name: "+first+" "+last,"Email: "+email,"Move-in date: "+move,"Length of stay: "+term,"Message: "+message].join("\n");$("status").textContent="Opening your email app to send the inquiry…";location.href="mailto:hello@balistayora.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)});
+load();
+})();
+</script>
+</body></html>
